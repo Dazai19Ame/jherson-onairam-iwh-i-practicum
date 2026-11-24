@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Update Plants
+    a(href='/') Return to the homepage
+    form(method='POST', action='update-cobj')
+      label Name
+      input(type='text', name='name')
+      label Species
+      input(type='text', name='species')
+      label Bio
+      input(type='text', name='bio')
+      input(type='submit', value='Create')
