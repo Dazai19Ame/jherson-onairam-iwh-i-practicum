@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 h1 Plants
+    a(href='/update-cobj') Add to this table
+    table
+      thead
+        tr
+          th Name
+          th Species
+          th Bio
+      tbody
+        each plant in data
+          tr
+            td= plant.properties.name
+            td= plant.properties.species
+            td= plant.properties.bio
